@@ -18,7 +18,7 @@ import com.yandex.mapkit.user_location.UserLocationObjectListener
 import com.yandex.mapkit.user_location.UserLocationView
 import com.yandex.runtime.image.ImageProvider
 
-class BaseMainFragment: Fragment(), UserLocationObjectListener {
+abstract class BaseMainFragment: Fragment(), UserLocationObjectListener {
     private val TARGET_LOCATION = Point(59.945933, 30.320045)
 
     internal var _binding: MainFragmentLayoutBinding? = null
